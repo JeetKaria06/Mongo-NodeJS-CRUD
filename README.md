@@ -42,5 +42,7 @@ There will be 3 different main categories of APIs
 
 ![image](https://user-images.githubusercontent.com/50065408/137629055-b083a786-9142-4b2c-a07a-b84efd9df0c6.png)
 
+## Testing APIs
 
+In the swagger UI documentation, I have put there the request schemas for each of the API endpoints and also added [responses.txt](https://github.com/JeetKaria06/Mongo-NodeJS-CRUD/blob/main/responses.txt) file which has the responses that each of the API endpoints gives.
 
