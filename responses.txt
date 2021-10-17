@@ -1,0 +1,208 @@
+/user/create
+
+{
+  "message": "User added successfully!",
+  "userData": {
+    "id": "616bffb5dc3b00ec50c0764d",
+    "name": "username1"
+  }
+}
+
+/user/update
+
+{
+  "message": "User updated successfully!",
+  "userData": {
+    "id": "616bffb5dc3b00ec50c0764d",
+    "name": "newname1"
+  }
+}
+
+/user/delete
+
+{
+  "message": "User deleted Successfully!"
+}
+
+/user/fetch-projects
+{
+  "projects": [
+    {
+      "_id": "616c0ca63eecaa33f8173704",
+      "userId": "616bffb5dc3b00ec50c0764d",
+      "name": "newname-project1",
+      "realData": [
+        {
+          "filename": "real1.csv",
+          "id": "616c1014a1cf1fb99c854e13"
+        },
+        {
+          "filename": "new-real2.csv",
+          "id": "616c1134ede6f08c8e5cf2a6"
+        }
+      ],
+      "modelIds": [
+        "616c13f5627641529ba9e911"
+      ],
+      "__v": 0
+    }
+  ]
+}
+
+
+/project/create
+
+{
+  "message": "Project added successfully!",
+  "projectData": {
+    "id": "616c0ca63eecaa33f8173704",
+    "userId": "616bffb5dc3b00ec50c0764d",
+    "name": "project1"
+  }
+}
+
+/project/fetch-models
+
+
+/project/update
+
+{
+  "message": "Project updated successfully!",
+  "projectData": {
+    "id": "616c0ca63eecaa33f8173704",
+    "userId": "616bffb5dc3b00ec50c0764d",
+    "name": "newname-project1"
+  }
+}
+
+
+/project/delete
+
+{
+  "message": "Project deleted successfully!"
+}
+
+/project/add-real-data
+
+{
+  "message": "Csv file will be inserted soon!"
+}
+
+
+/project/update-real-data
+{
+  "message": "CSV updated successfully!"
+}
+
+
+/project/delete-real-data
+{
+  "message": "Csv Deleted Successfully!"
+}
+
+/project/fetch
+{
+  "_id": "616c0ca63eecaa33f8173704",
+  "userId": "616bffb5dc3b00ec50c0764d",
+  "name": "newname-project1",
+  "realData": [
+    {
+      "filename": "real1.csv",
+      "id": "616c1014a1cf1fb99c854e13"
+    },
+    {
+      "filename": "new-real2.csv",
+      "id": "616c1134ede6f08c8e5cf2a6"
+    }
+  ],
+  "modelIds": [
+    "616c13f5627641529ba9e911"
+  ],
+  "__v": 0
+}
+
+/model/create
+
+{
+  "message": "Model inserted successfully!",
+  "modelData": {
+    "id": "616c13f5627641529ba9e911",
+    "userId": "616bffb5dc3b00ec50c0764d",
+    "projectId": "616c0ca63eecaa33f8173704",
+    "parameters": {
+      "batch-size": 128,
+      "training-cycles": 128
+    },
+    "name": "model1"
+  }
+}
+
+{
+  "message": "Model inserted successfully!",
+  "modelData": {
+    "id": "616c1407627641529ba9e915",
+    "userId": "616bffb5dc3b00ec50c0764d",
+    "projectId": "616c0ca63eecaa33f8173704",
+    "parameters": {
+      "batch-size": 128,
+      "training-cycles": 128
+    },
+    "name": "model2"
+  }
+}
+
+/model/add-synthetic-data
+
+{
+  "message": "Csv file will be inserted soon!"
+}
+
+/model/update
+
+{
+  "message": "Model Updated Successfully!"
+}
+
+/model/delete-synthetic-data
+{
+  "message": "Synthetic data csv deleted successfully!"
+}
+
+
+/model/read
+
+{
+  "modelData": {
+    "_id": "616c13f5627641529ba9e911",
+    "userId": "616bffb5dc3b00ec50c0764d",
+    "projectId": "616c0ca63eecaa33f8173704",
+    "name": "model1",
+    "parameters": {
+      "batch-size": 128,
+      "training-cycles": 128
+    },
+    "syntheticData": [
+      {
+        "filename": "synthetic1.csv",
+        "id": "616c149809dcab2856c60e61"
+      },
+      {
+        "filename": "synthetic2.csv",
+        "id": "616c14a809dcab2856c63576"
+      }
+    ],
+    "__v": 0
+  }
+}
+
+/model/update-synthetic-data
+
+{
+  "message": "CSV Updated Successfully!"
+}
+
+/model/delete
+
+{
+  "message": "Model deleted successfully!"
+}
