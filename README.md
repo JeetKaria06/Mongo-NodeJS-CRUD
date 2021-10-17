@@ -1,5 +1,5 @@
 # Mongo-NodeJS-CRUD
-CRUD operations in MongoDB with backend NodeJS server.
+CRUD operations in MongoDB with NodeJS based backend server.
 
 ## Steps to run it in your localhost
 
