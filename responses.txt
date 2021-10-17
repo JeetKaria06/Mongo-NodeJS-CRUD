@@ -1,4 +1,4 @@
-/user/create
+endpoint: /api/user/create
 
 {
   "message": "User added successfully!",
@@ -8,7 +8,7 @@
   }
 }
 
-/user/update
+endpoint: /api/user/update
 
 {
   "message": "User updated successfully!",
@@ -18,13 +18,13 @@
   }
 }
 
-/user/delete
+endpoint: /api/user/delete
 
 {
   "message": "User deleted Successfully!"
 }
 
-/user/fetch-projects
+endpoint: /api/user/fetch-projects
 {
   "projects": [
     {
@@ -50,7 +50,7 @@
 }
 
 
-/project/create
+endpoint: /api/project/create
 
 {
   "message": "Project added successfully!",
@@ -61,10 +61,32 @@
   }
 }
 
-/project/fetch-models
+
+endpoint: /api/project/fetch-models
+{
+  "models": [
+    {
+      "_id": "616c13f5627641529ba9e911",
+      "userId": "616bffb5dc3b00ec50c0764d",
+      "projectId": "616c0ca63eecaa33f8173704",
+      "name": "model1",
+      "parameters": {
+        "batch-size": 128,
+        "training-cycles": 128
+      },
+      "syntheticData": [
+        {
+          "filename": "new-synthetic1.csv",
+          "id": "616c149809dcab2856c60e61"
+        }
+      ],
+      "__v": 0
+    }
+  ]
+}
 
 
-/project/update
+endpoint: /api/project/update
 
 {
   "message": "Project updated successfully!",
@@ -76,31 +98,33 @@
 }
 
 
-/project/delete
+endpoint: /api/project/delete
 
 {
   "message": "Project deleted successfully!"
 }
 
-/project/add-real-data
+
+endpoint: /api/project/add-real-data
 
 {
   "message": "Csv file will be inserted soon!"
 }
 
 
-/project/update-real-data
+endpoint: /api/project/update-real-data
 {
   "message": "CSV updated successfully!"
 }
 
 
-/project/delete-real-data
+endpoint: /api/project/delete-real-data
 {
   "message": "Csv Deleted Successfully!"
 }
 
-/project/fetch
+
+endpoint: /api/project/fetch
 {
   "_id": "616c0ca63eecaa33f8173704",
   "userId": "616bffb5dc3b00ec50c0764d",
@@ -121,8 +145,10 @@
   "__v": 0
 }
 
-/model/create
 
+endpoint: /api/model/create
+
+Response-1
 {
   "message": "Model inserted successfully!",
   "modelData": {
@@ -137,6 +163,7 @@
   }
 }
 
+Response-2
 {
   "message": "Model inserted successfully!",
   "modelData": {
@@ -151,25 +178,28 @@
   }
 }
 
-/model/add-synthetic-data
+
+endpoint: /api/model/add-synthetic-data
 
 {
   "message": "Csv file will be inserted soon!"
 }
 
-/model/update
+
+endpoint: /api/model/update
 
 {
   "message": "Model Updated Successfully!"
 }
 
-/model/delete-synthetic-data
+
+endpoint: /api/model/delete-synthetic-data
 {
   "message": "Synthetic data csv deleted successfully!"
 }
 
 
-/model/read
+endpoint: /api/model/read
 
 {
   "modelData": {
@@ -195,13 +225,15 @@
   }
 }
 
-/model/update-synthetic-data
+
+endpoint: /api/model/update-synthetic-data
 
 {
   "message": "CSV Updated Successfully!"
 }
 
-/model/delete
+
+endpoint: /api/model/delete
 
 {
   "message": "Model deleted successfully!"

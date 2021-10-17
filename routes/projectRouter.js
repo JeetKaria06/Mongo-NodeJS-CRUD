@@ -48,9 +48,12 @@ router.post("/project/create", ProjectController.createProject);
  *                  schema:
  *                      type: object
  *                      properties:
- *                          name:
+ *                          id:
  *                              type: string
- *                              example: ObjectID
+ *                              example: objectID
+ *                          userId:
+ *                              type: string
+ *                              example: userObjectID
  *     responses:
  *          200:
  *              description: success status
